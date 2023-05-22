@@ -81,7 +81,7 @@
           </li>
 
           <li>
-            <a href="./Apply.html" class="navbar-link" data-nav-link> Apply Now </a>
+            <a href="./Apply.html#Apply" class="navbar-link" data-nav-link> Apply Now </a>
           </li>
 
         </ul>
@@ -92,7 +92,7 @@
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
 
-      <a href="./Apply.html" class="btn-outline"> Apply Now </a>
+      <a href="./Apply.html#Apply" class="btn-outline"> Apply Now </a>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
@@ -111,9 +111,9 @@
 
           <div class="hero-content">
 
-            <p class="hero-subtitle has-before"> Welcome to Our Agency </p>
+            <p class="hero-subtitle has-before"> Wensi Recruitment Agency </p>
 
-            <h1 class="h1 hero-title"> Wensi Recruitment Agency </h1>
+            <h1 class="h1 hero-title"> You Are A Few Steps Away </h1>
 
             <p class="hero-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque exercitationem quo adipisci doloremque
@@ -121,16 +121,7 @@
             </p>
 
             <div class="btn-group">
-              <a href="#about" class="btn btn-primary"> Learn More </a>
-
-              <button class="flex-btn">
-                <div class="btn-icon">
-                  <ion-icon name="mail-open-outline" aria-hidden="true"></ion-icon>
-                </div>
-                <a href="./Apply.html">
-                  <span class="span"> Apply Now </span>
-                </a>
-              </button>
+              <a href="#Apply" class="btn btn-primary"> Apply Now </a>
             </div>
 
           </div>
@@ -142,7 +133,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="Apply">
         <div class="container-b">
           <form action="" method="POST">
               <div class="wrapper">
@@ -152,6 +143,23 @@
                   </div>
       
                   <div class="form">
+
+                    <div class="inputfield">
+                      <label> Title </label>
+                      <div class="custom_select" name="Title" type="text">
+                        <select name="Title" type="text">
+                          <option name="Title" type="text" value="">Select</option>
+                          <option name="Title" type="text" value="Ms"> Ms </option>
+                          <option name="Title" type="text" value="Miss"> Miss </option>
+                          <option name="Title" type="text" value="Mrs"> Mrs </option>
+                          <option name="Title" type="text" value="Mr"> Mr </option>
+                          <option name="Title" type="text" value="Dr"> Dr </option>
+                          <option name="Title" type="text" value="Prof"> Prof </option>
+                          <option name="Title" type="text" value="Rev"> Rev </option>
+                        </select>
+                      </div>
+                   </div>
+
                      <div class="inputfield">
                         <input type="text" class="input" name="Name" placeholder="First and Last Name" required>
                      </div>
@@ -161,59 +169,122 @@
                       </div>
       
                       <div class="inputfield">
-                          <input type="tel" class="input" name="Phone Number" placeholder="Phone Number" required>
+                          <input type="tel" class="input" name="Cell/Mobile Number:" placeholder="Cell/Mobile Number:" required>
+                      </div>
+
+                      <div class="inputfield">
+                        <input type="text" class="input" name="Address Line 1:" placeholder="Address Line 1:" required>
+                     </div>
+
+                     <div class="inputfield">
+                        <input type="text" class="input" name="Address Line 2:" placeholder="Address Line 2:" required>
+                      </div>
+
+                      <div class="inputfield">
+                        <input type="text" class="input" name="City/Town" placeholder="City/Town:" required>
                       </div>
       
+                     <div class="inputfield">
+                          <input type="text" class="input" name="Nationality:" placeholder="Nationality:" required>
+                      </div>
+
                       <div class="inputfield">
-                        <label>What type of photography session are you interested in?</label>
-                        <div class="custom_select" name="Photography Session Type" type="text">
-                          <select name="Photography Session Type" type="text">
-                            <option name="Photography Session Type" type="text" value="">Select</option>
-                            <option name="Photography Session Type" type="text" value="Studio">Studio</option>
-                            <option name="Photography Session Type" type="text" value="Portrait">Portrait</option>
-                            <option name="Photography Session Type" type="text" value="Family Shoot">Family Shoot</option>
-                            <option name="Photography Session Type" type="text" value="Event">Event</option>
-                            <option name="Photography Session Type" type="text" value="Product">Product</option>
+                        <label>Country of interest:</label>
+                        <div class="custom_select" name="Country of interest:" type="text">
+                          <select name="Country of interest:" type="text" required>
+                            <option name="Country of interest:" type="text" value="">Select</option>
+                            <option name="Country of interest:" type="text" value="USA"> USA </option>
+                            <option name="Country of interest:" type="text" value="UK"> UK </option>
+                            <option name="Country of interest:" type="text" value="Canada"> Canada </option>
+                            <option name="Country of interest:" type="text" value="Malaysia"> Malaysia </option>
+                            <option name="Country of interest:" type="text" value="Australia"> Australia </option>
+                            <option name="Country of interest:" type="text" value="China"> China </option>
+                            <option name="Country of interest:" type="text" value="India"> India </option>
+                            <option name="Country of interest:" type="text" value="Cyprus">Cyprus </option>
                           </select>
                         </div>
                      </div>
-      
+
                      <div class="inputfield">
-                          <input type="tel" class="input" name="How many people will be photographed?" placeholder="How many people will be photographed?" required>
+                      <label>College/University of interest:</label>
+                      <div class="custom_select" name="College/University of interest:" type="text">
+                        <select name="College/University of interest:" type="text" required>
+                          <option name="College/University of interest:" type="text" value="">Select</option>
+                          <option name="College/University of interest:" type="text" value="Option 1"> Option 1 </option>
+                        </select>
                       </div>
-      
-                      <div class="inputfield">
-                          <label>How soon are you looking to book your session?</label>
-                          <div class="custom_select" name="How soon are you looking to book your session?" type="text">
-                            <select name="How soon are you looking to book your session?" type="text" required>
-                              <option name="How soon are you looking to book your session?" type="text" value="">Select</option>
-                              <option name="How soon are you looking to book your session?" type="text" value="This Week"> This Week </option>
-                              <option name="How soon are you looking to book your session?" type="text" value="Next Week"> Next Week </option>
-                              <option name="How soon are you looking to book your session?" type="text" value="This Month"> This Month </option>
-                              <option name="How soon are you looking to book your session?" type="text" value="Next Month"> Next Month </option>
-                              <option name="How soon are you looking to book your session?" type="text" value="In 2 Months or More"> In 2 Months or More </option>
-                            </select>
-                          </div>
-                       </div>
-      
-                       <div class="inputfield" name="final outcome envisioned for shoot?" type="text">
-                          <label>What is the final outcome you are envisioning for your shoot? (optional) </label>
-                          <textarea class="textarea" name="final outcome envisioned for shoot?" type="text"></textarea>
-                       </div>
-      
-                       <div class="inputfield">
-                          <label>How did you find Ali Nafe Photography?</label>
-                          <div class="custom_select" name="How did you find Ali Nafe Photography?" type="text">
-                            <select name="How did you find Ali Nafe Photography?" type="text" required>
-                              <option name="How did you find Ali Nafe Photography?" type="text" value="">Select</option>
-                              <option name="How did you find Ali Nafe Photography?" type="text" value="Facebook"> Facebook </option>
-                              <option name="How did you find Ali Nafe Photography?" type="text" value="Instagram"> Instagram </option>
-                              <option name="How did you find Ali Nafe Photography?" type="text" value="Business Refereal"> Business Refereal </option>
-                              <option name="How did you find Ali Nafe Photography?" type="text" value="Family or Friend"> Family or Friend </option>
-                              <option name="How did you find Ali Nafe Photography?" type="text" value="Other"> Other </option>
-                            </select>
-                          </div>
-                       </div>
+                    </div>
+
+                    <div class="inputfield">
+                      <label>Programme of interest:</label>
+                      <div class="custom_select" name="Programme of interest:" type="text">
+                        <select name="Programme of interest:" type="text" required>
+                          <option name="Programme of interest:" type="text" value="">Select</option>
+                          <option name="Programme of interest:" type="text" value="Certificate"> Certificate </option>
+                          <option name="Programme of interest:" type="text" value="Diploma"> Diploma </option>
+                          <option name="Programme of interest:" type="text" value="Undergraduate"> Undergraduate </option>
+                          <option name="Programme of interest:" type="text" value="Postgraduate"> Postgraduate </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="inputfield">
+                      <label>Course of interest (option 1)</label>
+                      <div class="custom_select" name="Course of interest (option 1):" type="text">
+                        <select name="Course of interest (option 1)" type="text" required>
+                          <option name="Course of interest (option 1)" type="text" value="">Select</option>
+                          <option name="Programme of interest:" type="text" value="Certificate"> Certificate </option>
+                          <option name="Programme of interest:" type="text" value="Diploma"> Diploma </option>
+                          <option name="Programme of interest:" type="text" value="Undergraduate"> Undergraduate </option>
+                          <option name="Programme of interest:" type="text" value="Postgraduate"> Postgraduate </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="inputfield">
+                      <label>Course of interest (option 2)</label>
+                      <div class="custom_select" name="Course of interest (option 2)" type="text">
+                        <select name="Course of interest (option 2)" type="text" required>
+                          <option name="Course of interest (option 2)" type="text" value="">Select</option>
+                          <option name="Programme of interest:" type="text" value="Certificate"> Certificate </option>
+                          <option name="Programme of interest:" type="text" value="Diploma"> Diploma </option>
+                          <option name="Programme of interest:" type="text" value="Undergraduate"> Undergraduate </option>
+                          <option name="Programme of interest:" type="text" value="Postgraduate"> Postgraduate </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="inputfield">
+                      <label>Course of interest (option 3)</label>
+                      <div class="custom_select" name="Course of interest (option 3)" type="text">
+                        <select name="Course of interest (option 3)" type="text" required>
+                          <option name="Course of interest (option 3)" type="text" value="">Select</option>
+                          <option name="Course of interest (option 3)" type="text" value="Certificate"> Certificate </option>
+                          <option name="Programme of interest:" type="text" value="Diploma"> Diploma </option>
+                          <option name="Programme of interest:" type="text" value="Undergraduate"> Undergraduate </option>
+                          <option name="Programme of interest:" type="text" value="Postgraduate"> Postgraduate </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="inputfield">
+                      <label> Tuition: </label>
+                      <div class="custom_select" name="Tuition:" type="text">
+                        <select name="Tuition:" type="text" required>
+                          <option name="Tuition:" type="text" value="">Select</option>
+                          <option name="Tuition:" type="text" value="Self Financing"> Self Financing </option>
+                          <option name="Tuition:" type="text" value="Scholarship"> Scholarship </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="inputfield">
+                      <input type="text" class="input" name="Maximum Budget" placeholder="Maximum Budget" required>
+                  </div>
+
+                    <div class="inputfield">
+                      <input type="text" class="input" name="Upload of Document:" placeholder="Upload of Document:" required>
+                  </div>
                         
                     <div class="inputfield">
                       <button class="login-btn" type="submit">
