@@ -131,14 +131,20 @@
 
       <section id="Apply">
         <div class="container-b">
-          <form action="https://formsubmit.co/admission.wensi@gmail.com" method="POST">
+          <form method="POST" action="https://formsubmit.co/admission.wensi@gmail.com" enctype="multipart/form-data">
 
             <input type="hidden" name="_subject" value="New Application Submission from Website!">
+
+            <input type="hidden" name="_template" value="table">
 
               <div class="wrapper">
       
                   <div class="title">
-                    Applicatoin Form
+                    Online Applicatoin Form
+                  </div>
+
+                  <div class="title">
+                    <p style="font-size: 16px; color: red;"> Take Note: A $25 Service Fee Will Be Required to further process Our Application If You Qualify For A Scholarship and further Instruction Will Be Given To You </p>
                   </div>
                   
                   <div class="form">
@@ -165,15 +171,53 @@
                       <input type="text" class="input" name="First Name" placeholder="First Name" required>
                     </div>
 
+                    <!-- Middle Name (optional) -->
+                    <div class="inputfield">
+                      <input type="text" class="input" name="Middle Name (optional)" placeholder="Middle Name (optional)">
+                    </div>
+
                     <!-- Family Name -->
                     <div class="inputfield">
                       <input type="text" class="input" name="Family Name" placeholder="Family Name" required>
                     </div>
 
+                    <!-- Marital Status -->
+                    <div class="inputfield">
+                      <label> Marital Status </label>
+                      <div class="custom_select" name="MaritalStatus" type="text">
+                        <select name="Marital_Status" type="text" required>
+                          <option name="Select" type="text" value=""> Select </option>
+                          <option value="Single">Single</option>
+                          <option value="Married">Married</option>
+                          <option value="Divorced">Divorced</option>
+                          <option value="Widowed">Widowed</option>
+                          <option value="Separated">Separated</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- Religion -->
+                    <div class="inputfield">
+                      <label> Religion </label>
+                      <div class="custom_select" name="Religion" type="text">
+                        <select name="Religion" type="text" required>
+                          <option name="Select" type="text" value=""> Select </option>
+                          <option value="Christianity">Christianity</option>
+                          <option value="Islam">Islam</option>
+                          <option value="Hinduism">Hinduism</option>
+                          <option value="Buddhism">Buddhism</option>
+                          <option value="Judaism">Judaism</option>
+                          <option value="Sikhism">Sikhism</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                    
                     <!-- Date of Birth -->
                     <div class="inputfield">
                       <label> Date of Birth </label>
-                      <input type="date" class="input" name="D.O.B" placeholder="D.O.B" required>
+                      <input type="date" class="input" name="Date_of_Birth" placeholder="Date of Birth" required>
                     </div>
 
                     <!-- Country names and Country Name -->
@@ -438,13 +482,36 @@
                       </div>
                     </div>
 
+                    <!-- Occupation -->
+                    <div class="inputfield">
+                      <input type="text" class="input" name="Occupation" placeholder="Occupation" required>
+                    </div>
+
+                    <!-- Medical Condition -->
+                    <div class="inputfield">
+                      <label> Any Medical Condition?  </label>
+                      <div class="custom_select" name="Medical_Condition" type="text">
+                        <select name="Medical_Condition" type="text" required>
+                          <option name="Select" type="text" value=""> Select </option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- If Yes, Please Specify? -->
+                    <div class="inputfield">
+                      <input type="text" class="input" name="If_Yes_Please_Specify" placeholder="If Yes, Please Specify">
+                    </div>
+
+                    <!-- ID/Passport -->
                     <div class="inputfield">
                       <input type="text" class="input" name="ID/Passport" placeholder="ID/Passport" required>
                     </div>
       
                     <!-- Email Address -->
                     <div class="inputfield">
-                      <input type="email" class="input" name="Email Address" placeholder="Email Address" required>
+                      <input type="email" class="input" name="Email_Address" placeholder="Email Address" required>
                     </div>
       
                     <div class="inputfield">
@@ -453,7 +520,7 @@
 
                     <!-- Home Address -->
                     <div class="inputfield">
-                      <input type="text" class="input" name="Home Address" placeholder="Home Address" required>
+                      <input type="text" class="input" name="Home_Address" placeholder="Home Address" required>
                     </div>
 
                     <!-- Country -->
@@ -790,36 +857,81 @@
                       <input type="text" class="input" name="Maximum Budget" placeholder="Maximum Budget" required>
                     </div>
 
-                    
                     <label> Upload of Documents: (Leave uploads blank to what doesn't apply to you)</label>
+
+                    <br>
+                    <br>
+
                     <div class="inputfield">
                       <label> High School Certificate </label>
-                      <input type="file" class="input" name="High School Certificate" placeholder="High School Certificate">
+                      <input type="file" class="input" name="High_School_Certificate" accept="image/png, image/jpeg, application/pdf" placeholder="High School Certificate">
                     </div>
 
                     <div class="inputfield">
                       <label> ID/Passport </label>
-                      <input type="file" class="input" name="ID/Passport" placeholder="ID/Passport">
+                      <input type="file" class="input" name="ID_Passport" accept="image/png, image/jpeg, application/pdf" placeholder="ID/Passport">
                     </div>
 
                     <div class="inputfield">
                       <label> Certificate, Diploma, Degree </label>
-                      <input type="file" class="input" name="Certificate, Diploma, Degree" placeholder="Certificate, Diploma, Degree">
+                      <input type="file" class="input" name="Certificate_Diploma_Degree" accept="image/png, image/jpeg, application/pdf" placeholder="Certificate, Diploma, Degree">
                     </div>
 
                     <div class="inputfield">
                       <label> Transcript </label>
-                      <input type="file" class="input" name="Transcript" placeholder="Transcript">
+                      <input type="file" class="input" name="Transcript" accept="image/png, image/jpeg, application/pdf" placeholder="Transcript">
                     </div>
 
                     <div class="inputfield">
                       <label> Curriculum Vitae </label>
-                      <input type="file" class="input" name="Curriculum Vitae" placeholder="Curriculum Vitae">
+                      <input type="file" class="input" name="Curriculum_Vitae" accept="image/png, image/jpeg, application/pdf" placeholder="Curriculum Vitae">
                     </div>
 
+                    <br>
+                    <br>
+
+                    <label> Sponsor Details </label>
+
+                    <div class="inputfield">
+                      <label> Relationship with Sponsor </label>
+                      <div class="custom_select" name="RelationshipWithSponsor" type="text">
+                        <select name="RelationshipWithSponsor" type="text" required>
+                          <option name="RelationshipWithSponsor" type="text" value=""> Select </option>
+                          <option name="RelationshipWithSponsor" type="text" value="Self"> Self </option>
+                          <option name="RelationshipWithSponsor" type="text" value="Parent"> Parent </option>
+                          <option name="RelationshipWithSponsor" type="text" value="Spouse"> Spouse </option>
+                          <option name="RelationshipWithSponsor" type="text" value="Relative"> Relative </option>
+                          <option name="RelationshipWithSponsor" type="text" value="Friend"> Friend </option>
+                          <option name="RelationshipWithSponsor" type="text" value="Employer"> Employer </option>
+                          <option name="RelationshipWithSponsor" type="text" value="Organization"> Organization </option>
+                          <option name="RelationshipWithSponsor" type="text" value="Other"> Other </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="inputfield">
+                      <label> Sponsor Name </label>
+                      <div class="inputfield">
+                        <input type="text" class="input" name="Sponsor Name" placeholder="Sponsor Name" required>
+                      </div>
+                    </div>
+
+                    <div class="inputfield">
+                      <label> Sponsor Phone Number </label>
+                      <div class="inputfield">
+                        <input type="tel" id="phone" class="input" name="Sponsor Phone Number" placeholder="Sponsor Cell/Mobile Number" required>
+                      </div>
+                    </div>
+
+                    <div class="inputfield">
+                      <label> Sponsor Email </label>
+                      <div class="inputfield">
+                        <input type="email" class="input" name="Sponsor Email Address" placeholder="Sponsor Email Address" required>
+                      </div>
+                    </div>
+                  
                     <input type="hidden" name="_captcha" value="true">
 
-                        
                     <div class="inputfield">
                       <button type="submit" class="btn btn-primary" >
                         <a>
@@ -839,8 +951,6 @@
   </main>
 
   
-
-
   <!-- 
     - #FOOTER
   -->
@@ -947,6 +1057,12 @@
               <li>
                 <a href="https://www.facebook.com/profile.php?id=100057788944329&mibextid=ZbWKwL" class="social-link">
                   <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/wensirecruitmentagencyz/" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
                 </a>
               </li>
 
